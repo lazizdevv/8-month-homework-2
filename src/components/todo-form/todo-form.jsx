@@ -19,7 +19,7 @@ export const TodoForm = ({ submit, defaultValues }) => {
       <div className="container">
         <form
           onSubmit={handleSubmit(submit)}
-          className="border border-blue-500 mx-auto  max-w-lg flex flex-col gap-5 p-5 lg:p-10 rounded-lg shadow-md shadow-blue-500"
+          className="border border-blue-500 mx-auto  max-w-lg flex flex-col gap-5 px-5 py-10 lg:p-10 rounded-lg shadow-md shadow-blue-500"
         >
           <div className="pb-7 relative">
             <input
@@ -51,7 +51,7 @@ export const TodoForm = ({ submit, defaultValues }) => {
 
           <button
             type="submit"
-            className="py-3 px-6 text-white font-bold bg-green-500 hover:bg-green-600 w-1/2 mx-auto rounded-lg"
+            className="py-3 px-6 text-white font-bold bg-green-500 hover:bg-green-600 w-9/12 mx-auto rounded-lg"
           >
             Save
           </button>

@@ -11,9 +11,9 @@ export const Home = () => {
 
   return (
     <>
-      <section className="border-b-2 bg-blue-200 border-b-blue-500 py-3 sticky top-0 z-10 mt-0">
+      <section className="border-b-2 bg-blue-300 border-b-blue-500 py-3 sticky top-0 z-10 mt-0">
         <div className="container">
-          <div className="flex justify-center gap-5 ">
+          <div className="flex justify-between items-center max-w-screen-lg mx-auto">
             <button
               onClick={() => navigate("create-todo")}
               className="py-3 px-6 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg shadow-md shadow-slate-500"
