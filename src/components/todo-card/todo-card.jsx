@@ -15,7 +15,7 @@ export const TodoCard = ({ title, description, id }) => {
 
   return (
     <>
-      <div className="flex gap-5 flex-wrap relative p-5 pb-10 max-w-screen-md w-full  border-blue-500 border rounded-lg shadow-md shadow-blue-400">
+      <div className="flex gap-5 flex-wrap relative p-5 pb-12 max-w-screen-md w-full  border-blue-500 border rounded-lg shadow-md shadow-blue-400">
         <h1 className="w-9/12 break-words">Title: {title}</h1>
         <h1 className="w-9/12 break-words">Description: {description}</h1>
 
