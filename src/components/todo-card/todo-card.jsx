@@ -3,9 +3,16 @@ import { Link } from "react-router-dom";
 import { useTodoStore } from "../../store/todo";
 import { EditIcon } from "../../assets/svg/EditIcon";
 import { DeleteIcon } from "../../assets/svg/DeleteIcon";
+import { toast } from "react-toastify";
 
 export const TodoCard = ({ title, description, id }) => {
   const removeTodo = useTodoStore((state) => state.removeTodo);
+
+  const handleDelete = () => {
+    removeTodo(id);
+    toast.success("ToDo Muvaffaqiyatli O'chirildi!");
+  };
+
   return (
     <>
       <div className="flex gap-5 flex-wrap relative p-5 pb-10 max-w-screen-md w-full  border-blue-500 border rounded-lg shadow-md shadow-blue-400">
@@ -21,7 +28,7 @@ export const TodoCard = ({ title, description, id }) => {
 
           <button
             className="py-2 px-4 bg-red-500 hover:bg-red-600 text-white rounded-md"
-            onClick={() => removeTodo(id)}
+            onClick={handleDelete}
           >
             <DeleteIcon />
           </button>

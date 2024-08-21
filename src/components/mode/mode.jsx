@@ -35,7 +35,7 @@ export const LightModeToggle = () => {
       />
       <div
         className={`relative w-[110px] h-[50px] ${
-          isLightMode ? "bg-black" : "bg-zinc-500"
+          isLightMode ? "bg-black" : "bg-white"
         } rounded-full
           after:absolute after:content-[''] after:w-[40px] after:h-[40px]
           ${
